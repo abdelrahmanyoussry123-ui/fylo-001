@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Solutions - Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-logo">
+                    <div class="navbar-logo-glow"></div>
+                    <i class="navbar-logo-icon fas fa-brain"></i>
+                </div>
+                <span class="text-gradient">AI Solutions</span>
+            </a>
+            
+            <div class="navbar-nav">
+                <a href="index.html" class="navbar-link">Home</a>
+                <a href="how-ai-works.html" class="navbar-link">How AI Works</a>
+                <a href="solutions.html" class="navbar-link active">Solutions</a>
+                                <a href="Tools.html" class="navbar-link">AI Tools</a>
+                <a href="moreinfo.html" class="navbar-link ">More Info</a>
+            </div>
+            
+            <button class="navbar-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="navbar-menu-mobile" id="mobileMenu">
+            <div class="navbar-nav-mobile">
+                <a href="index.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">Home</a>
+                <a href="how-ai-works.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">How AI Works</a>
+                <a href="solutions.html" class="navbar-link-mobile active" onclick="toggleMobileMenu()">Solutions</a>
+                              <a href="Tools.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">Ai Tools</a>
+                   <a href="moreinfo.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">More Info</a>
+
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-bg-glow hero-bg-glow-1"></div>
+        <div class="hero-bg-glow hero-bg-glow-2"></div>
+        
+        <div class="hero-content">
+            <div class="text-center">
+                <span class="tag tag-cyan">AI Solutions Catalog</span>
+                <h1 class="text-gradient">AI in Different Fields</h1>
+                <p class="text-gray-300 text-xl max-w-3xl mx-auto">Explore how artificial intelligence is revolutionizing industries and solving complex challenges across the globe</p>
+            </div>
+        </div>
+        <!--Slider-->
+<div class="slider">
+  <div class="slides">
+    <img src="Imges//Explore how artificial intelligence is….jpg" class="slide">
+    <img src="Imges/download.jpg" class="slide">
+    <img src="Imges/🚀 AI Job Search Tools_ Find Your Dream Job.jpg" class="slide">
+  </div>
+
+  <!--prev-->  
+  <button class="prev">❮</button>
+
+  <!--Next -->
+  <button class="next">❯</button>
+<script>
+
+    const slidesContainer = document.querySelector('.slides');
+const slides = document.querySelectorAll('.slide');
+
+let index = 0;
+
+function updateSlider() {
+  const slideWidth = slides[0].getBoundingClientRect().width;
+  slidesContainer.style.transform = `translateX(${-index * slideWidth}px)`;
+}
+
+// Auto Slide
+setInterval(() => {
+  index = (index + 1) % slides.length;
+  updateSlider();
+}, 3000);
+
+
+</script>
+    </section>
+
+    <!-- AI Categories Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="card category-card">
+                    <div class="category-card-glow"></div>
+                    <div class="category-icon healthcare">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-white">Healthcare</h3>
+                    <p class="text-gray-400">AI-powered diagnostics, drug discovery, and personalized treatment plans</p>
+                    
+                    <div class="category-stats">
+                        <div class="category-stat">
+                            <div class="category-stat-value">2M+</div>
+                            <div class="category-stat-label">patients</div>
+                        </div>
+                        <div class="category-stat">
+                            <div class="category-stat-value">96%</div>
+                            <div class="category-stat-label">accuracy</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card category-card">
+                    <div class="category-card-glow"></div>
+                    <div class="category-icon education">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-white">Education</h3>
+                    <p class="text-gray-400">Adaptive learning systems, automated grading, and personalized curricula</p>
+                    
+                    <div class="category-stats">
+                        <div class="category-stat">
+                            <div class="category-stat-value">5M+</div>
+                            <div class="category-stat-label">students</div>
+                        </div>
+                        <div class="category-stat">
+                            <div class="category-stat-value">45%</div>
+                            <div class="category-stat-label">improvement</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card category-card">
+                    <div class="category-card-glow"></div>
+                    <div class="category-icon business">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-white">Business</h3>
+                    <p class="text-gray-400">Predictive analytics, customer insights, and process automation</p>
+                    
+                    <div class="category-stats">
+                        <div class="category-stat">
+                            <div class="category-stat-value">10K+</div>
+                            <div class="category-stat-label">companies</div>
+                        </div>
+                        <div class="category-stat">
+                            <div class="category-stat-value">67%</div>
+                            <div class="category-stat-label">efficiency</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card category-card">
+                    <div class="category-card-glow"></div>
+                    <div class="category-icon cybersecurity">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-white">Cybersecurity</h3>
+                    <p class="text-gray-400">Threat detection, anomaly identification, and automated response systems</p>
+                    
+                    <div class="category-stats">
+                        <div class="category-stat">
+                            <div class="category-stat-value">1M+ blocked</div>
+                            <div class="category-stat-label">threats</div>
+                        </div>
+                        <div class="category-stat">
+                            <div class="category-stat-value">&lt; 1s</div>
+                            <div class="category-stat-label">response</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card category-card">
+                    <div class="category-card-glow"></div>
+                    <div class="category-icon daily-life">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="text-white">Daily Life</h3>
+                    <p class="text-gray-400">Smart homes, personal assistants, and recommendation systems</p>
+                    
+                    <div class="category-stats">
+                        <div class="category-stat">
+                            <div class="category-stat-value">50M+</div>
+                            <div class="category-stat-label">devices</div>
+                        </div>
+                        <div class="category-stat">
+                            <div class="category-stat-value">92%</div>
+                            <div class="category-stat-label">satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem → AI Tool Cards -->
+    <section class="section problem-solutions">
+        <div class="problem-solutions-bg"></div>
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="text-gradient">Problem → AI Tool</h2>
+                <p class="max-w-2xl mx-auto">Real-world problems solved with cutting-edge AI technology</p>
+            </div>
+            
+            <div class="solution-item">
+                <div class="card">
+                    <div class="solution-content">
+                        <div class="solution-details">
+                            <div class="space-y-4">
+                                <span class="tag tag-red">Problem</span>
+                                <h3 class="text-white">Hospital Emergency Overcrowding</h3>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <span class="tag tag-blue">AI Technology</span>
+                                <h4 class="text-cyan-400">Predictive Patient Flow Analysis</h4>
+                                <p class="text-gray-400">AI analyzes historical data, seasonal patterns, and real-time inputs to predict patient influx and optimize staff allocation.</p>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <span class="tag tag-green">Result</span>
+                                <p class="text-green-400">37% reduction in wait times</p>
+                            </div>
+                            
+                            <div class="solution-metrics">
+                                <div>
+                                    <div class="solution-metric-value">↓ 37%</div>
+                                    <div class="solution-metric-label">Wait Time</div>
+                                </div>
+                                <div>
+                                    <div class="solution-metric-value">↑ 84%</div>
+                                    <div class="solution-metric-label">Patient Satisfaction</div>
+                                </div>
+                                <div>
+                                    <div class="solution-metric-value">$2.4M/year</div>
+                                    <div class="solution-metric-label">Cost Savings</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-image">
+                            <div class="solution-image-overlay"></div>
+                            <div class="solution-image-container">
+                                <img src="https://images.unsplash.com/photo-1758691462848-ba1e929da259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwdGVjaG5vbG9neSUyMGhlYWx0aGNhcmV8ZW58MXx8fHwxNzY0MDYyNDE1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Medical Technology Healthcare">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="solution-item">
+                <div class="card">
+                    <div class="solution-content">
+                        <div class="solution-details">
+                            <div class="space-y-4">
+                                <span class="tag tag-red">Problem</span>
+                                <h3 class="text-white">Financial Fraud Detection</h3>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <span class="tag tag-blue">AI Technology</span>
+                                <h4 class="text-cyan-400">Real-Time Transaction Monitoring</h4>
+                                <p class="text-gray-400">Machine learning models analyze millions of transactions per second, identifying suspicious patterns and preventing fraud before it occurs.</p>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <span class="tag tag-green">Result</span>
+                                <p class="text-green-400">99.2% fraud detection accuracy</p>
+                            </div>
+                            
+                            <div class="solution-metrics">
+                                <div>
+                                    <div class="solution-metric-value">99.2%</div>
+                                    <div class="solution-metric-label">Detection Rate</div>
+                                </div>
+                                <div>
+                                    <div class="solution-metric-value">↓ 68%</div>
+                                    <div class="solution-metric-label">False Positives</div>
+                                </div>
+                                <div>
+                                    <div class="solution-metric-value">&lt; 0.5s</div>
+                                    <div class="solution-metric-label">Response Time</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-image">
+                            <div class="solution-image-overlay"></div>
+                            <div class="solution-image-container">
+                                <img src="https://images.unsplash.com/photo-1760199789455-49098afd02f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjeWJlcnNlY3VyaXR5JTIwZGlnaXRhbHxlbnwxfHx8fDE3NjQwODQyNDV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Cybersecurity Digital">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="solution-item">
+                <div class="card">
+                    <div class="solution-content">
+                        <div class="solution-details">
+                            <div class="space-y-4">
+                                <span class="tag tag-red">Problem</span>
+                                <h3 class="text-white">Supply Chain Disruptions</h3>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <span class="tag tag-blue">AI Technology</span>
+                                <h4 class="text-cyan-400">Predictive Logistics Optimization</h4>
+                                <p class="text-gray-400">AI predicts demand fluctuations, optimizes routes, and anticipates disruptions to ensure smooth supply chain operations.</p>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <span class="tag tag-green">Result</span>
+                                <p class="text-green-400">52% faster delivery times</p>
+                            </div>
+                            
+                            <div class="solution-metrics">
+                                <div>
+                                    <div class="solution-metric-value">↑ 52%</div>
+                                    <div class="solution-metric-label">Delivery Speed</div>
+                                </div>
+                                <div>
+                                    <div class="solution-metric-value">↓ 41%</div>
+                                    <div class="solution-metric-label">Cost Reduction</div>
+                                </div>
+                                <div>
+                                    <div class="solution-metric-value">97.8%</div>
+                                    <div class="solution-metric-label">Accuracy</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="solution-image">
+                            <div class="solution-image-overlay"></div>
+                            <div class="solution-image-container">
+                                <img src="https://images.unsplash.com/photo-1529078155058-5d716f45d604?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGRhdGElMjBhbmFseXRpY3N8ZW58MXx8fHwxNzY0MDk0MTc0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Business Data Analytics">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Showcase -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-16">
+                <h2 class="text-gradient">Success Story</h2>
+                <p class="max-w-2xl mx-auto">A deep dive into how AI transformed urban transportation</p>
+            </div>
+            
+            <div class="card">
+                <div class="case-study-content">
+                    <div class="case-study-details">
+                        <div>
+                            <span class="tag tag-cyan">Case Study</span>
+                            <h3 class="text-white mb-4">AI Transforms Urban Traffic Management</h3>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="text-red-400 mb-2">Problem</h4>
+                                <p class="text-gray-400">City experiencing 2+ hour daily traffic delays affecting 500,000+ commuters</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-blue-400 mb-2">AI Approach</h4>
+                                <p class="text-gray-400 mb-3">Deployed AI-powered traffic management system with real-time analysis</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start gap-2 text-gray-400 text-sm">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
+                                        <span>Real-time traffic flow analysis across 2,000+ intersections</span>
+                                    </li>
+                                    <li class="flex items-start gap-2 text-gray-400 text-sm">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
+                                        <span>Adaptive signal timing based on current conditions</span>
+                                    </li>
+                                    <li class="flex items-start gap-2 text-gray-400 text-sm">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
+                                        <span>Integration with public transit systems</span>
+                                    </li>
+                                    <li class="flex items-start gap-2 text-gray-400 text-sm">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 flex-shrink-0"></div>
+                                        <span>Mobile app providing optimal route suggestions</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-green-400 mb-2">Final Result</h4>
+                                <p class="text-gray-400">Reduced average commute time by 34% and emissions by 28%</p>
+                            </div>
+                        </div>
+                        
+                        <div class="case-study-impact">
+                            <div class="case-study-impact-item">
+                                <i class="case-study-impact-icon fas fa-clock"></i>
+                                <div class="case-study-impact-value">34%</div>
+                                <div class="case-study-impact-label">Time Saved</div>
+                            </div>
+                            <div class="case-study-impact-item">
+                                <i class="case-study-impact-icon fas fa-chart-line"></i>
+                                <div class="case-study-impact-value">28%</div>
+                                <div class="case-study-impact-label">Emissions Reduced</div>
+                            </div>
+                            <div class="case-study-impact-item">
+                                <i class="case-study-impact-icon fas fa-users"></i>
+                                <div class="case-study-impact-value">500K+</div>
+                                <div class="case-study-impact-label">Commuters Helped</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="case-study-image">
+                        <div class="case-study-image-overlay"></div>
+                        <div class="case-study-image-container">
+                            <img src="https://images.unsplash.com/photo-1646079670582-807db63b82a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFmZmljJTIwY2l0eSUyMGFlcmlhbHxlbnwxfHx8fDE3NjQxNTYwMjl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Traffic City Aerial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="cta-bg"></div>
+        <div class="cta-bg-glow"></div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="text-gradient">Start Learning AI Today</h2>
+                <p class="text-gray-300 text-xl">Join thousands of innovators exploring the possibilities of artificial intelligence</p>
+                <a href="how-ai-works.html" class="btn btn-primary">
+                    <span>Begin Your AI Journey</span>
+                    <i class="fas fa-arrow-up-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bg"></div>
+
+            <!-- Copyright -->
+            <div class="footer-copyright">
+                <p>© 2025 AI Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

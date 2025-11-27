@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timed Cards Opening</title>
+  <link rel="stylesheet" href="./style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="indicator"></div>
+
+  <div class="navbar1">
+    <div class="navbar1-container">
+      <a href="index.html" class="navbar1-brand">
+        <div class="navbar1-logo">
+          <div class="navbar1-logo-glow"></div>
+          <i class="navbar1-logo-icon fas fa-brain"></i>
+        </div>
+        <span class="text-gradient">AI Solutions</span>
+      </a>
+
+      <div class="navbar1-nav">
+        <a href="index.html" class="navbar1-link ">Home</a>
+        <a href="how-ai-works.html" class="navbar1-link">How AI Works</a>
+        <a href="solutions.html" class="navbar1-link">Solutions</a>
+                        <a href="Tools.html" class="navbar-link">AI Tools</a>
+        <a href="moreinfo.html" class="navbar1-link active">More Info</a>
+      </div>
+
+      <button class="navbar1-toggle" onclick="toggleMobileMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="navbar1-menu-mobile" id="mobileMenu">
+      <div class="navbar1-nav-mobile">
+        <a href="index.html" class="navbar1-link-mobile active" onclick="toggleMobileMenu()">Home</a>
+        <a href="how-ai-works.html" class="navbar1-link-mobile" onclick="toggleMobileMenu()">How AI Works</a>
+        <a href="solutions.html" class="navbar1-link-mobile" onclick="toggleMobileMenu()">Solutions</a>
+                        <a href="Tools.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">Ai Tools</a>
+        <a href="moreinfo.html" class="navbar1-link-mobile" onclick="toggleMobileMenu()">More Info</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="demo"></div>
+
+  <div class="details" id="details-even">
+    <div class="place-box">
+      <div class="text">Data Science</div>
+    </div>
+    <div class="title-box-1"><div class="title-1">Data</div></div>
+    <div class="title-box-2"><div class="title-2">Science</div></div>
+    <div class="desc">
+      Data science is broader: it combines data collection, cleaning, analysis, modeling, but often extends to building predictive models, extracting insights from large & complex datasets (structured or unstructured), and sometimes deploying models.
+    </div>
+    <div class="cta">
+      <button class="bookmark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z" clip-rule="evenodd" />
+        </svg>
+      </button>
+      <button class="discover">Discover more</button>
+    </div>
+  </div>
+
+  <div class="details" id="details-odd">
+    <div class="place-box">
+      <div class="text">Artificial Intelligence (AI)</div>
+    </div>
+    <div class="title-box-1"><div class="title-1">Artificial</div></div>
+    <div class="title-box-2"><div class="title-2">Intelligence</div></div>
+    <div class="desc">
+      Artificial Intelligence is the broad field concerned with enabling machines to perform tasks that normally require human intelligence: reasoning, decision-making, language understanding, vision, planning, etc.
+    </div>
+    <div class="cta">
+      <button class="bookmark">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd" d="M6.32 2.577a49.255 49.255 0 0111.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 01-1.085.67L12 18.089l-7.165 3.583A.75.75 0 013.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93z" clip-rule="evenodd" />
+        </svg>
+      </button>
+      <button class="discover">Discover more</button>
+    </div>
+  </div>
+  
+  <div class="pagination" id="pagination">
+    <div class="arrow arrow-left">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </div>
+    <div class="arrow arrow-right">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </div>
+    <div class="progress-sub-container">
+      <div class="progress-sub-background">
+        <div class="progress-sub-foreground"></div>
+      </div>
+    </div>
+    <div class="slide-numbers" id="slide-numbers"></div>
+  </div>
+
+  <div class="cover"></div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+  <script src="./script1.js"></script>
+</body>
+</html>

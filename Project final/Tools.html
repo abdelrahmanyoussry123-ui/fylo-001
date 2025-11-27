@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Tools</title>
+  <link rel="stylesheet" href="Tools.css" />
+</head>
+<body>
+     <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <div class="navbar-logo">
+                    <div class="navbar-logo-glow"></div>
+                    <i class="navbar-logo-icon fas fa-brain"></i>
+                </div>
+                <span class="text-gradient">AI Solutions</span>
+            </a>
+            
+            <div class="navbar-nav">
+                <a href="index.html" class="navbar-link ">Home</a>
+                <a href="how-ai-works.html" class="navbar-link">How AI Works</a>
+                <a href="solutions.html" class="navbar-link">Solutions</a>
+                <a href="Tools.html" class="navbar-link-active">Ai Tools</a>
+                                <a href="moreinfo.html" class="navbar-link">AI Tools</a>
+
+            </div>
+            
+            <button class="navbar-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="navbar-menu-mobile" id="mobileMenu">
+            <div class="navbar-nav-mobile">
+                <a href="index.html" class="navbar-link-mobile active" onclick="toggleMobileMenu()">Home</a>
+                <a href="how-ai-works.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">How AI Works</a>
+                <a href="solutions.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">Solutions</a>
+                                <a href="Tools.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">Ai Tools</a>
+                                <a href="moreinfo.html" class="navbar-link-mobile" onclick="toggleMobileMenu()">More Info </a>
+
+            </div>
+        </div>
+    </nav>
+  <header class="header">
+    <h1>AI Tools</h1>
+    <p class="subtitle">Useful tools, what they help with, and where they shine</p>
+
+    <div class="controls">
+     
+    </div>
+  </header>
+
+  <main>
+    <section class="tools-grid" id="toolsGrid">
+      <!-- Card template: modify/add tools as needed -->
+       <div class="card-one">
+      <article class="tool-card" data-name="ChatGPT">
+        <div class="icon">💬</div>
+         <h2 class="tool-namel">ChatGPT</h2>
+       <a href="https://chatgpt.com/c/6928538d-9de4-8330-92c1-eb1bfcfe6cc7" class="tool-name">ChatGPT</a>
+        <p class="tool-meta"><strong>Importance:</strong> Conversational AI for writing, brainstorming, and coding.</p>
+        <p class="tool-meta"><strong>Helps you with:</strong> Content creation, debugging code, Q&amp;A, idea generation.</p>
+        <p class="tool-meta"><strong>Specialized in:</strong> Language understanding and generation.</p>
+      </article>
+
+      <article class="tool-card" data-name="Midjourney">
+        <div class="icon">🎨</div>
+                <h2 class="tool-namel">Midjourney</h2>
+               <a href="https://clickup.com/lp/brain/agents-camp?utm_source=google&utm_medium=cpc&utm_campaign=gs_cpc_emea-lv_nnc_nb_trial_all-devices_troas_lp_x_all-departments_x_competitor_ai-image-misc&utm_content=all-countries_kw-target_text_all-industries_all-features_all-use-cases_comp-misc_ai-image_midjourney&utm_term=midjourney%20ai&utm_creative=784159830126__&utm_custom1=&utm_custom2=&utm_lptheme=&utm_lpmod=&utm_mt=e&gad_source=1&gad_campaignid=23271165766&gbraid=0AAAAACR5vIKGwez8B0vO3a2w8c437dFEQ&gclid=Cj0KCQiAiqDJBhCXARIsABk2kSlsaJdZfthAofCBUwXiqOqsocWMW7ApI9f8BbJuV_VvayxG_JeydjYaAg19EALw_wcB" class="tool-name">Midjourney</a>
+        <p class="tool-meta"><strong>Importance:</strong> High-quality image generation from text prompts.</p>
+        <p class="tool-meta"><strong>Helps you with:</strong> Concept art, illustrations, creative visuals.</p>
+        <p class="tool-meta"><strong>Specialized in:</strong> Artistic image synthesis.</p>
+      </article>
+
+      <article class="tool-card" data-name="Runway">
+        <div class="icon">🎥</div>
+                <h2 class="tool-namel">Runway</h2>
+        <a href="https://deevid.ai/model/runway-ai?utm_source=google&utm_medium=cpc&utm_campaign=m-model-runway&utm_term=runway&utm_content=pc&gad_source=1&gad_campaignid=22729366277&gbraid=0AAAAAq898mND7fcfMm3cbutpAsOij8qoE&gclid=Cj0KCQiAiqDJBhCXARIsABk2kSkPQhDDmhYhPUp1FddBnwNL71xo2nRMxiHqtfCcmOhruotLNNwjv88aAnVYEALw_wcB" class="tool-name">Run Away</a>
+        <p class="tool-meta"><strong>Importance:</strong> AI video tools and advanced video editing features.</p>
+        <p class="tool-meta"><strong>Helps you with:</strong> Video editing, motion effects, style transfer.</p>
+        <p class="tool-meta"><strong>Specialized in:</strong> Video and motion AI.</p>
+      </article>
+</div>
+<div class="cards-two">
+      <article class="tool-card" data-name="Notion AI">
+        <div class="icon">📝</div>
+        <h2 class="tool-namel">Notion AI</h2>
+                <a href=" https://clickup.com/lp/compare/notion-vs-clickup?utm_source=google&utm_medium=cpc&utm_campaign=gs_cpc_arlv_nnc_nb_trial_all-devices_troas_lp_x_all-departments_x_competitor&utm_content=all-countries_kw-target_text_all-industries_all-features_all-use-cases_notion_ai_phrase*&utm_term=notion%20ai&utm_creative=689606246051_Challenger-SMB-15052023_rsa&utm_custom1=&utm_custom2=&utm_lptheme=&utm_lpmod=&utm_mt=e&gad_source=1&gad_campaignid=20988031334&gbraid=0AAAAACR5vIL0DbYwLiXubwSRQwv_51HRM&gclid=Cj0KCQiAiqDJBhCXARIsABk2kSnVpvYSekMcTv4Eq7pcykzW6QxeceHSq20gOCv6Zpkf_c-fJ3YLCcUaAhsHEALw_wcB" class="tool-name">Notion Ai</a>
+
+        <p class="tool-meta"><strong>Importance:</strong> Boosts productivity inside Notion with writing & summarization.</p>
+        <p class="tool-meta"><strong>Helps you with:</strong> Summaries, content drafts, project org.</p>
+        <p class="tool-meta"><strong>Specialized in:</strong> Productivity and content within Notion.</p>
+      </article>
+
+      <article class="tool-card" data-name="Gemini">
+        <div class="icon">⚡</div>
+        <h2 class="tool-namel">Gemini</h2>
+        <a href="https://chaton.ai/gemini/?utm_source=google&utm_medium=cpc&utm_campaign=GA%20|%20ChatOn%20|%20Web%20|%20WW%20|%20Search%20|%20Main%20|%20CPA%20|%2021.07.25&utm_content=776556484500&utm_term=gemini%20ai&campaign_id=22809916773&adset_id=191306246528&ad_id=776556484500&gad_source=1&gad_campaignid=22809916773&gbraid=0AAAAA9SXzF5K3J5LBVtWGLOBkPGy55Nks&gclid=Cj0KCQiAiqDJBhCXARIsABk2kSlASb6LKAg9JVr5SnXaZTAZbORGP3-bgkdH8OxNEtI8fFIATvORooEaAt23EALw_wcB" class="tool-name">Gemini</a>
+        <p class="tool-meta"><strong>Importance:</strong> Fast, Google-integrated assistant for search and multimodal queries.</p>
+        <p class="tool-meta"><strong>Helps you with:</strong> Research, image understanding, quick answers.</p>
+        <p class="tool-meta"><strong>Specialized in:</strong> Search & multimodal reasoning.</p>
+      </article>
+
+      <article class="tool-card" data-name="Canva AI">
+        <div class="icon">🖌️</div>
+                <h2 class="tool-namel">Canva AI</h2>
+        <a href="https://www.canva.com/ai-assistant/" class="tool-name">Canva Ai</a>
+        <p class="tool-meta"><strong>Importance:</strong> Easy graphic design with AI-assisted tools.</p>
+        <p class="tool-meta"><strong>Helps you with:</strong> Social posts, posters, quick designs.</p>
+        <p class="tool-meta"><strong>Specialized in:</strong> User-friendly graphic design.</p>
+      </article>
+</div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
